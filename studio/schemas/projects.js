@@ -1,6 +1,6 @@
 export default {
-  name: 'category',
-  title: 'Category',
+  name: 'projects',
+  title: 'Project',
   type: 'document',
   fields: [
     {
@@ -9,9 +9,15 @@ export default {
       type: 'string',
     },
     {
-      name: 'description',
+      name: 'desc',
       title: 'Description',
-      type: 'text',
+      type: 'string',
+    },
+    {
+      name: 'link',
+      title: 'Link',
+      type: 'url',
     },
   ],
+
 }
