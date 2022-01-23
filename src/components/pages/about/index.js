@@ -49,14 +49,13 @@ function About() {
   var flag;
   var name;
 
-
   if (lang) {
     contact = En.contact;
     skills = En.skills;
     edu = En.edu;
     work = En.work;
     aboutMe = En.AboutMe;
-    flag = <GB />;
+    flag = <GR />;
     name = "Alexandros Papadopoulos";
   } else {
     contact = Gr.contact;
@@ -64,7 +63,7 @@ function About() {
     edu = Gr.edu;
     work = Gr.work;
     aboutMe = Gr.AboutMe;
-    flag = <GR />;
+    flag = <GB />;
     name = "Αλεξανδρος Παπαδόπουλος";
   }
 
