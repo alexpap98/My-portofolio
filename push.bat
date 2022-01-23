@@ -9,6 +9,7 @@ set result=false
 if %b% == Yes set result=true
 if %b% == yes set result=true
 if %b% == y set result=true
+if %b% == nai set result=true
 
 
 if "%result%" == "true" (
