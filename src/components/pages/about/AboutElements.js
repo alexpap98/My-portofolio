@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 const main = "#4b0459";
 const sec = "#f3c2fc";
+
 
 export const Resume = styled.div`
   width: 100%;
@@ -8,6 +9,7 @@ export const Resume = styled.div`
   display: flex;
   margin: 50px auto;
   color: white;
+  transition: ease all .5s;
 
   @media screen and (max-width: 786px) {
     display: block;
@@ -62,14 +64,19 @@ export const ResumeItem = styled.div`
 `;
 
 export const ContactUl = styled.ul`
+  list-style-type: none;
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+  }
 
+  @media screen and (max-width: 786px) {
+  }
 `;
 
 export const LeftLi = styled.li`
   display: flex;
   margin-bottom: 10px;
   align-items: center;
-
   &:last-child {
     padding-bottom: 30px;
   }
@@ -86,7 +93,12 @@ export const Icon = styled.div`
   position: relative;
 
   @media screen and (max-width: 1000px) {
-    display: none;
+    width: 25px;
+    height: 25px;
+  }
+
+  @media screen and (max-width: 786px) {
+    display: block;
   }
 `;
 
@@ -102,22 +114,39 @@ export const Data = styled.div`
   }
 `;
 
-export const ResumeSkills = styled.div``;
+export const ResumeSkills = styled.div`
+  justify-content: space-between;
+`;
 
 export const SkillName = styled.div`
   width: 25%;
 `;
 
 export const SkillProg = styled.div`
-  width: 60%;
-  margin: 0 10px;
+  width: 50%;
+  margin: 0 15px;
   height: 5px;
   background: ${sec};
   position: relative;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 786px) {
+    display: block;
+  }
 `;
 
 export const SkillPer = styled.div`
   width: 15%;
+
+  @media screen and (max-width: 1000px) {
+    margin-left: 90px;
+  }
+  @media screen and (max-width: 786px) {
+    margin-left: 0;
+  }
 `;
 
 export const SkillSpan = styled.span`

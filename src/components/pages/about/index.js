@@ -2,7 +2,6 @@ import { FaBasketballBall, FaHome } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { BsController } from "react-icons/bs";
 import { MdLibraryMusic } from "react-icons/md";
-
 import {
   Resume,
   ResumeLeft,
@@ -54,6 +53,7 @@ function About() {
       icon: <HiMail />,
     },
   ];
+
   const skills = [
     { name: "Java", prog: "80%" },
     { name: "JavaScript", prog: "80%" },

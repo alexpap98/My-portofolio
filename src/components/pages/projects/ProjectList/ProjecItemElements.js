@@ -14,8 +14,7 @@ const PopIn = keyframes`
 export const Project = styled.li`
   margin: 1rem 0;
   list-style: none;
-  animation: ${PopIn} 400ms cubic-bezier(.15,.64,.51,1.29);
-
+  animation: ${PopIn} 400ms cubic-bezier(0.15, 0.64, 0.51, 1.29);
 `;
 
 export const Card = styled.div`
@@ -56,6 +55,7 @@ export const ProjectUrl = styled.a`
   transition: transform 0.2s;
 
   &:hover {
+    transition: all 0.2s ease-out;
     background-color: #4b0459;
     color: #fff;
     transform: scale(1.2);
