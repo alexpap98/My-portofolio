@@ -1,7 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 const main = "#4b0459";
 const sec = "#f3c2fc";
-
 
 export const Resume = styled.div`
   width: 100%;
@@ -9,7 +8,7 @@ export const Resume = styled.div`
   display: flex;
   margin: 50px auto;
   color: white;
-  transition: ease all .5s;
+  transition: ease all 0.5s;
 
   @media screen and (max-width: 786px) {
     display: block;
