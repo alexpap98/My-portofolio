@@ -64,12 +64,6 @@ export const ResumeItem = styled.div`
 
 export const ContactUl = styled.ul`
   list-style-type: none;
-  @media screen and (max-width: 1000px) {
-    padding: 0;
-  }
-
-  @media screen and (max-width: 786px) {
-  }
 `;
 
 export const LeftLi = styled.li`
@@ -188,6 +182,21 @@ export const RightLi = styled.li`
     background: ${main};
   }
 
+  @media screen and (max-width: 422px){
+   &::after{
+    height: 136.5px;
+   } 
+  }
+  @media screen and (max-width: 359px){
+   &::after{
+    height: 161px;
+   } 
+
+   &:last-child::after{
+    height: 110px;
+   } 
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -198,6 +207,7 @@ export const RightLi = styled.li`
     border-radius: 50%;
     border: 2px solid ${main};
   }
+
 `;
 
 export const DateDiv = styled.div`
