@@ -297,11 +297,11 @@ export const HobbyIcon = styled.i`
 export const ChangeLanguage1 = styled.div`
   display: none;
   position: absolute;
-  float: right;
 
+  
   width: 30px;
   height: 20px;
-  margin: 35px;
+  margin: 30px;
 
   @media screen and (max-width: 786px) {
     display: block;
@@ -311,7 +311,7 @@ export const ChangeLanguage1 = styled.div`
 export const ChangeLanguage = styled.div`
   position: relative;
   float: right;
-
+  
   width: 45px;
   height: 30px;
 
