@@ -16,5 +16,5 @@ if "%result%" == "true" (
 	set /p b="Which Branch? : "
 	git push origin main:v1.2
 ) 
-pause
+
 
