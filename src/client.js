@@ -6,5 +6,5 @@ export default sanityClient({
   apiVersion: "2022-01-18",
   token: process.env.REACT_APP_API_KEY,
   useCdn: false,
-  ignoreBrowserTokenWarning: true
+  ignoreBrowserTokenWarning: true,
 });
