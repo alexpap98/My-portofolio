@@ -5,6 +5,9 @@ const PopIn = keyframes`
   position: relative;
   top:-1000px;
   };
+  80%{
+    opacity: 0.5;
+  }
   100%{opacity: 1;
   top:0;
   position: relative;

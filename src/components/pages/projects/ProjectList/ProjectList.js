@@ -1,9 +1,8 @@
 import ProjectItem from "./ProjectItem";
 
-
 function ProjectList(props) {
   return (
-    <ul>
+    <ul style={{ padding: 0 }}>
       {props.projects.map((project) => (
         <ProjectItem
           key={project.id}
