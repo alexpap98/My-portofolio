@@ -47,6 +47,8 @@ function About() {
   var work;
   var aboutMe;
   var flag;
+  var name;
+
 
   if (lang) {
     contact = En.contact;
@@ -55,6 +57,7 @@ function About() {
     work = En.work;
     aboutMe = En.AboutMe;
     flag = <GB />;
+    name = "Alexandros Papadopoulos";
   } else {
     contact = Gr.contact;
     skills = Gr.skills;
@@ -62,6 +65,7 @@ function About() {
     work = Gr.work;
     aboutMe = Gr.AboutMe;
     flag = <GR />;
+    name = "Αλεξανδρος Παπαδόπουλος";
   }
 
   return (
@@ -72,8 +76,8 @@ function About() {
           <ResumeContent>
             <ResumeItem>
               <Title>
-                <Name>Alexandros Papadopoulos</Name>
-                <Desc>I wish i was a Developer</Desc>
+                <Name>{name}</Name>
+                <Desc>Developer</Desc>
               </Title>
               <ContactUl>
                 {contact.map((c, index) => {
