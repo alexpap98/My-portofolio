@@ -10,6 +10,7 @@ function Layout(props) {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  
   return (
     <>
       <SideBar isOpen={isOpen} toggle={toggle} />

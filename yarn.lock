@@ -4002,6 +4002,11 @@
     "path-type" "^4.0.0"
     "yaml" "^1.10.0"
 
+"country-flag-icons@^1.4.19":
+  "integrity" "sha512-1hmXFJ4UURQt0Ex0990B7oOL4n9KLpT9NOSEmZoYh+/5DQ7/pikyqaptqCLUFFv/bYHyvYFeo0fqV82XxU6VOA=="
+  "resolved" "https://registry.npmjs.org/country-flag-icons/-/country-flag-icons-1.4.19.tgz"
+  "version" "1.4.19"
+
 "countup.js@^2.0.8":
   "integrity" "sha512-pW3xwwD+hB+xmtI16xFcuLS0D5hSQqPQWkZOdgpKQyzxCquDNo2VCFPkRw12vmvdpnicXVTcjmYiakG6biwINg=="
   "resolved" "https://registry.npmjs.org/countup.js/-/countup.js-2.0.8.tgz"
@@ -5465,6 +5470,11 @@
   dependencies:
     "locate-path" "^6.0.0"
     "path-exists" "^4.0.0"
+
+"flag-icons@^6.0.3":
+  "integrity" "sha512-nirBQ1xEeBNHmpPEUe9RDS11Y7reIeqxXgQlOFTHlYd/dJXVznBR5t7t2x2s+CPmstTzIyJ3xEHdM4+7MAML+A=="
+  "resolved" "https://registry.npmjs.org/flag-icons/-/flag-icons-6.0.3.tgz"
+  "version" "6.0.3"
 
 "flat-cache@^3.0.4":
   "integrity" "sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg=="

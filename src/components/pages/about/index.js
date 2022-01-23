@@ -1,5 +1,4 @@
-import { FaBasketballBall, FaHome } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
+import { FaBasketballBall } from "react-icons/fa";
 import { BsController } from "react-icons/bs";
 import { MdLibraryMusic } from "react-icons/md";
 import {
@@ -27,65 +26,49 @@ import {
   HobbyLi,
   HobbyUl,
   HobbyIcon,
+  ChangeLanguage,
+  ChangeLanguage1,
 } from "./AboutElements";
+import { useState } from "react";
+import * as En from "./Languages/English.js";
+import * as Gr from "./Languages/Greek.js";
+import { GR, GB } from "country-flag-icons/react/3x2";
 
 function About() {
-  const today = new Date();
-  const birthDate = new Date("1998-11-12");
-  var age = today.getFullYear() - birthDate.getFullYear();
-  const m = today.getMonth() - birthDate.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
+  const [lang, setLanguage] = useState(true);
+
+  function ChangeLang() {
+    setLanguage(!lang);
   }
 
-  const contact = [
-    { desc: "Thessalonoliki", icon: <FaHome /> },
-    // { desc: "-", icon: <FaMobileAlt /> },
-    {
-      desc: (
-        <a
-          href="mailto:alpa09898@gmail.com"
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          alpa09898@gmail.com
-        </a>
-      ),
-      icon: <HiMail />,
-    },
-  ];
+  var contact;
+  var skills;
+  var edu;
+  var work;
+  var aboutMe;
+  var flag;
 
-  const skills = [
-    { name: "Java", prog: "80%" },
-    { name: "JavaScript", prog: "80%" },
-    { name: "MySql", prog: "65%" },
-    { name: "C++/C", prog: "50%" },
-    { name: "PHP", prog: "50%" },
-  ];
+  if (lang) {
+    contact = En.contact;
+    skills = En.skills;
+    edu = En.edu;
+    work = En.work;
+    aboutMe = En.AboutMe;
+    flag = <GB />;
+  } else {
+    contact = Gr.contact;
+    skills = Gr.skills;
+    edu = Gr.edu;
+    work = Gr.work;
+    aboutMe = Gr.AboutMe;
+    flag = <GR />;
+  }
 
-  const edu = [
-    {
-      date: "2016 - Until Now",
-      title: "Internationl Hellenic University",
-      desc: "Computer Science and Computer Engineering",
-    },
-    {
-      date: "2013 - 2016",
-      title: "Vocational Senior High School of Igoumenitsa",
-      desc: "Informatics Technology",
-    },
-  ];
-
-  const work = [
-    {
-      date: "2016 - 2021",
-      title: "Delivery/Service",
-      desc: "Seasonal work",
-    },
-  ];
   return (
     <>
       <Resume>
         <ResumeLeft>
+          <ChangeLanguage1 onClick={ChangeLang}>{flag}</ChangeLanguage1>
           <ResumeContent>
             <ResumeItem>
               <Title>
@@ -127,15 +110,12 @@ function About() {
         </ResumeLeft>
 
         <ResumeRight>
+          <ChangeLanguage onClick={ChangeLang}>{flag}</ChangeLanguage>
           <ResumeItem>
             <Title>
               <Name>About</Name>
             </Title>
-            <p style={{ paddingInline: 20 }}>
-              I am {age} years old. I am an undergraduate student in faculty of
-              computer engineering and electronic systems on the International
-              Hellenic University.
-            </p>
+            <p style={{ paddingInline: 20 }}>{aboutMe}</p>
           </ResumeItem>
           <ResumeItem>
             <Title>

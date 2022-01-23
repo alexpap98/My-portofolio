@@ -182,19 +182,19 @@ export const RightLi = styled.li`
     background: ${main};
   }
 
-  @media screen and (max-width: 422px){
-   &::after{
-    height: 136.5px;
-   } 
+  @media screen and (max-width: 422px) {
+    &::after {
+      height: 136.5px;
+    }
   }
-  @media screen and (max-width: 359px){
-   &::after{
-    height: 161px;
-   } 
+  @media screen and (max-width: 359px) {
+    &::after {
+      height: 161px;
+    }
 
-   &:last-child::after{
-    height: 110px;
-   } 
+    &:last-child::after {
+      height: 110px;
+    }
   }
 
   &::before {
@@ -207,7 +207,6 @@ export const RightLi = styled.li`
     border-radius: 50%;
     border: 2px solid ${main};
   }
-
 `;
 
 export const DateDiv = styled.div`
@@ -293,4 +292,30 @@ export const HobbyIcon = styled.i`
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 45px;
+`;
+
+export const ChangeLanguage1 = styled.div`
+  display: none;
+  position: absolute;
+  float: right;
+
+  width: 30px;
+  height: 20px;
+  margin: 35px;
+
+  @media screen and (max-width: 786px) {
+    display: block;
+  }
+`;
+
+export const ChangeLanguage = styled.div`
+  position: relative;
+  float: right;
+
+  width: 45px;
+  height: 30px;
+
+  @media screen and (max-width: 786px) {
+    display: none;
+  }
 `;
