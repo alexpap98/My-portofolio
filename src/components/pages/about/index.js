@@ -64,7 +64,7 @@ function About() {
     work = Gr.work;
     aboutMe = Gr.AboutMe;
     flag = <GB />;
-    name = "Αλεξανδρος Παπαδόπουλος";
+    name = "Αλεξανδρος Παπαδοπουλος";
   }
 
   return (
