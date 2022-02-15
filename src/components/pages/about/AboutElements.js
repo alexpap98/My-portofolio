@@ -150,8 +150,6 @@ export const SkillSpan = styled.span`
   background: #fff;
 `;
 
-export const ResumeSect = styled.div``;
-
 export const ResumeRight = styled.div`
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -298,7 +296,6 @@ export const ChangeLanguage1 = styled.div`
   display: none;
   position: absolute;
 
-  
   width: 30px;
   height: 20px;
   margin: 30px;
@@ -311,11 +308,39 @@ export const ChangeLanguage1 = styled.div`
 export const ChangeLanguage = styled.div`
   position: relative;
   float: right;
-  
+
   width: 45px;
   height: 30px;
 
   @media screen and (max-width: 786px) {
     display: none;
+  }
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+
+  justify-content: center;
+`;
+
+export const ProjectUrl = styled.a`
+  width: auto;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid #4b0459;
+  background-color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: transform 0.2s;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    background-color: #4b0459;
+    color: #fff;
+    transform: scale(1.2);
   }
 `;

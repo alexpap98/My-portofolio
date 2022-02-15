@@ -11,8 +11,8 @@ if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
 export const AboutMe =
   " I am " +
   age +
-  " years old. I am an undergraduate student in faculty of computer engineering and electronic systems on the International Hellenic University.";
-
+  " years old. I am an undergraduate student in faculty of Information and Electronic Engineering on the International Hellenic University.";
+  
 export const contact = [
   { desc: "Thessalonoliki", icon: <FaHome /> },
   // { desc: "-", icon: <FaMobileAlt /> },
@@ -41,12 +41,12 @@ export const edu = [
   {
     date: "2016 - Until Now",
     title: "Internationl Hellenic University",
-    desc: "Computer Science and Computer Engineering",
+    desc: "Degree of Information and Electronic Engineering",
   },
   {
     date: "2013 - 2016",
     title: "Vocational Senior High School of Igoumenitsa",
-    desc: "Informatics Technology",
+    desc: "Degree of Software application technician",
   },
 ];
 
