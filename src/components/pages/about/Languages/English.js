@@ -40,7 +40,7 @@ export const skills = [
 export const edu = [
   {
     date: "2016 - Until Now",
-    title: "Internationl Hellenic University",
+    title: "International Hellenic University",
     desc: "Degree of Information and Electronic Engineering",
   },
   {

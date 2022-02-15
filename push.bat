@@ -13,8 +13,8 @@ if %b% == nai set result=true
 
 
 if "%result%" == "true" (
-	set /p b="Which Branch? : "
-	git push origin main:v1.2
+	set /p s="Which Branch? : "
+	git push origin main:%s%
 ) 
 
 
