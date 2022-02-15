@@ -25,8 +25,6 @@ import {
   HobbyIcon,
   ChangeLanguage,
   ChangeLanguage1,
-  BtnWrap,
-  ProjectUrl,
 } from "./AboutElements";
 import { FaBasketballBall } from "react-icons/fa";
 import { BsController } from "react-icons/bs";
@@ -36,7 +34,6 @@ import * as En from "./Languages/English.js";
 import * as Gr from "./Languages/Greek.js";
 import { GR, GB } from "country-flag-icons/react/3x2";
 
-import ResumePDF from "../../../sources/Resume/Resume.pdf";
 
 function About() {
   const [lang, setLanguage] = useState(true);
@@ -188,11 +185,6 @@ function About() {
           </ResumeItem>
         </ResumeRight>
       </Resume>
-      {/* <BtnWrap>
-        <ProjectUrl href={ResumePDF} target="_blank">
-          Download my Resume
-        </ProjectUrl>
-      </BtnWrap> */}
     </>
   );
 }
