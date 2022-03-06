@@ -13,9 +13,6 @@ import {
   Data,
   ResumeSkills,
   SkillName,
-  SkillProg,
-  SkillPer,
-  SkillSpan,
   ResumeRight,
   RightLi,
   DateDiv,
@@ -25,6 +22,8 @@ import {
   HobbyIcon,
   ChangeLanguage,
   ChangeLanguage1,
+  SkillsLi,
+  SkillUl
 } from "./AboutElements";
 import { FaBasketballBall } from "react-icons/fa";
 import { BsController } from "react-icons/bs";
@@ -96,19 +95,15 @@ function About() {
               <Title>
                 <Name>Skill's</Name>
               </Title>
-              <ContactUl>
+              <SkillUl>
                 {skills.map((s, index) => {
                   return (
-                    <LeftLi key={index}>
+                    <SkillsLi key={index}>
                       <SkillName>{s.name}</SkillName>
-                      <SkillProg>
-                        <SkillSpan style={{ width: s.prog }} />
-                      </SkillProg>
-                      <SkillPer>{s.prog}</SkillPer>
-                    </LeftLi>
+                    </SkillsLi>
                   );
                 })}
-              </ContactUl>
+              </SkillUl>
             </ResumeSkills>
           </ResumeContent>
         </ResumeLeft>

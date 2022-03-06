@@ -344,3 +344,16 @@ export const ProjectUrl = styled.a`
     transform: scale(1.2);
   }
 `;
+
+export const SkillUl = styled.ul`
+  display: block; /* Remove bullet points; allow greater control of positioning */
+  padding: 0; /* Override defaults for lists */
+  margin: 0; /* Override defaults for lists */
+  width: 100%;
+`;
+
+export const SkillsLi = styled.li`
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+`;
