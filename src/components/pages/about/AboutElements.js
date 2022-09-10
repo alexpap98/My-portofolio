@@ -25,6 +25,7 @@ export const ResumeLeft = styled.div`
     border-top-right-radius: 30px;
     border-bottom-left-radius: 0;
     width: 100%;
+    padding-bottom: 2em;
   }
 `;
 
@@ -346,9 +347,9 @@ export const ProjectUrl = styled.a`
 `;
 
 export const SkillUl = styled.ul`
-  display: block; /* Remove bullet points; allow greater control of positioning */
-  padding: 0; /* Override defaults for lists */
-  margin: 0; /* Override defaults for lists */
+  display: block; 
+  padding:0;
+  margin: 0;
   width: 100%;
 `;
 

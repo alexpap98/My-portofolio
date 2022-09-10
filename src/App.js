@@ -7,7 +7,7 @@ import NotFound from "./components/pages/NotFound";
 
 function App() {
   return (
-    <Layout> 
+    <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

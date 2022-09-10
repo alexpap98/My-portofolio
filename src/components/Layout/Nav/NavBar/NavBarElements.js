@@ -12,8 +12,6 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-
-
 `;
 
 export const NavBarContainer = styled.div`
@@ -89,5 +87,3 @@ export const NavLinks = styled(LinkR)`
     border-bottom: 0.2rem solid white;
   }
 `;
-
-
