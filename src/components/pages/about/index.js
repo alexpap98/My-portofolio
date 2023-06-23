@@ -29,15 +29,17 @@ import { FaBasketballBall } from "react-icons/fa";
 import { BsController } from "react-icons/bs";
 import { MdLibraryMusic } from "react-icons/md";
 import { useState } from "react";
-import * as En from "./Languages/English.js";
+import *  as En from "./Languages/English";
 import * as Gr from "./Languages/Greek.js";
 import { GR, GB } from "country-flag-icons/react/3x2";
+import { strings } from './Languages/index';
 
 
 function About() {
   const [lang, setLanguage] = useState(true);
 
   function ChangeLang() {
+    strings.setLanguage('gr');
     setLanguage(!lang);
   }
 
@@ -75,7 +77,7 @@ function About() {
           <ResumeContent>
             <ResumeItem>
               <Title>
-                <Name>{name}</Name>
+                <Name>{strings.name}</Name>
                 <Desc>Developer</Desc>
               </Title>
               <ContactUl>
