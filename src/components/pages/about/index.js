@@ -36,44 +36,29 @@ import { strings } from './Languages/index';
 
 
 function About() {
-  const [lang, setLanguage] = useState(true);
+  const [flagLang, setflag] = useState(<GR />);
 
   function ChangeLang() {
-    strings.setLanguage('gr');
-    setLanguage(!lang);
-  }
-
-  var contact;
-  var skills;
-  var edu;
-  var work;
-  var aboutMe;
-  var flag;
-  var name;
-
-  if (lang) {
-    contact = En.contact;
-    skills = En.skills;
-    edu = En.edu;
-    work = En.work;
-    aboutMe = En.AboutMe;
-    flag = <GR />;
-    name = "Alexandros Papadopoulos";
-  } else {
-    contact = Gr.contact;
-    skills = Gr.skills;
-    edu = Gr.edu;
-    work = Gr.work;
-    aboutMe = Gr.AboutMe;
-    flag = <GB />;
-    name = "Αλεξανδρος Παπαδοπουλος";
+    let language = strings.getLanguage()
+    console.log("curr", language);
+    switch (language) {
+      case "gr":
+        setflag(<GR />);
+        strings.setLanguage('en');
+        break;
+      case "en":
+        setflag(<GB />);
+        strings.setLanguage('gr');
+        break;
+    }
+    console.log(strings.getLanguage());
   }
 
   return (
     <>
       <Resume>
         <ResumeLeft>
-          <ChangeLanguage1 onClick={ChangeLang}>{flag}</ChangeLanguage1>
+          <ChangeLanguage1 onClick={ChangeLang}>{flagLang}</ChangeLanguage1>
           <ResumeContent>
             <ResumeItem>
               <Title>
@@ -81,7 +66,7 @@ function About() {
                 <Desc>Developer</Desc>
               </Title>
               <ContactUl>
-                {contact.map((c, index) => {
+                {strings.contact.map((c, index) => {
                   return (
                     <LeftLi key={index}>
                       <Icon>
@@ -98,7 +83,7 @@ function About() {
                 <Name>Skill's</Name>
               </Title>
               <SkillUl>
-                {skills.map((s, index) => {
+                {strings.skills.map((s, index) => {
                   return (
                     <SkillsLi key={index}>
                       <SkillName>{s.name}</SkillName>
@@ -111,19 +96,19 @@ function About() {
         </ResumeLeft>
 
         <ResumeRight>
-          <ChangeLanguage onClick={ChangeLang}>{flag}</ChangeLanguage>
+          <ChangeLanguage onClick={ChangeLang}>{flagLang}</ChangeLanguage>
           <ResumeItem>
             <Title>
               <Name>About</Name>
             </Title>
-            <p style={{ paddingInline: 20 }}>{aboutMe}</p>
+            <p style={{ paddingInline: 20 }}>{strings.aboutme}</p>
           </ResumeItem>
           <ResumeItem>
             <Title>
               <Name>Education</Name>
             </Title>
             <ul>
-              {edu.map((e, index) => {
+              {strings.edu.map((e, index) => {
                 return (
                   <RightLi key={index}>
                     <DateDiv>{e.date}</DateDiv>
@@ -143,7 +128,7 @@ function About() {
               <Name>Work Experience</Name>
             </Title>
             <ul>
-              {work.map((w, index) => {
+              {strings.work.map((w, index) => {
                 return (
                   <RightLi key={index}>
                     <DateDiv>{w.date}</DateDiv>
